@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimización de Envío de Dinero</title>
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plataforma de Envío de Dinero</h1>
+        <form id="transferForm">
+            <label for="amount">Monto a Enviar (USD):</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="exchangeRate">Tasa de Cambio (COP/USD):</label>
+            <input type="number" id="exchangeRate" name="exchangeRate" required>
+
+            <button type="button" onclick="calculateTransfer()">Calcular Transferencia</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="prototipo.js"></script>
+</body>
+</html>
